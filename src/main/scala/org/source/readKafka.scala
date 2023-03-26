@@ -11,7 +11,7 @@ object readKafka {
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
 
     val kafkaSource: KafkaSource[String] = KafkaSource.builder().setBootstrapServers("localhost:9092")
-      .setTopics("flink")
+      .setTopics("carFlow")
       .setGroupId("my-group")
       // timestamp(1657256176000L)(从时间戳大于等于指定时间戳（毫秒）的数据开始消费)   latest(从最末尾位点开始消费)
       .setStartingOffsets(OffsetsInitializer.earliest()) // 默认值 earliest() 从最早位点开始消费
