@@ -1,0 +1,4 @@
+1,zhangSan,80
+2,liSi,46
+3,wangWu,100
+4,maLiu,21,60
